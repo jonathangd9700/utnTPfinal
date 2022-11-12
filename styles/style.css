@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/codigo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+}
+.containerMenu{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #427E80;
+    align-items: center;
+}
+.containerMenu ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-right: 20%;
+}
+.containerMenu ul li{
+    padding: 10px;
+    text-decoration: none;
+    background-color: #F0F5E4;
+    border-radius: 15px;
+    margin-left: 40px;
+
+}
+.containerTitulo{
+    height: 400px;
+    text-align: center;
+    margin-top: 200px;
+}
+.tituloPrincipal{
+    display: inline;
+    font-size: 4rem;
+    color: #F0F5E4;
+    background-color: #2D2D2D;
+}
+.containerMain{
+    width: 100%;
+    height: 100vh;
+    background-color: #427E80;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+
+}
+.containerMainHistoria{
+    width: 100%;
+    height: 100vh;
+    background-color: #427E80;
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    text-align: center;
+    align-items: center;
+    color: #F0F5E4;
+}
+.card{
+    width: 350px;
+    height: 350px;
+    background-color: #F0F5E4;
+    border: solid 5px #154454;
+}
+.imgCard{
+    width: 100%;
+    height: 60%;
+}
+.card a{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    text-decoration: none;
+    color: #F0F5E4;
+    background-color: #427E80;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #154454;;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2D2D2D;
+}
+footer h3,h4{
+    color: #F0F5E4;
+}
+.articleHistoria{
+   display: flex;
+   justify-content: space-around;
+   align-items: center; 
+}
+.articleHistoriaR{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    flex-flow: row-reverse;
+ }
+
+.articleHistoriaR h2{
+    font-size: 3.2rem;
+}
+
+.articleHistoriaR p{
+    font-size: 1.2rem;
+}
+
+.articleHistoria h2{
+    font-size: 3.2rem;
+}
+.articleHistoria p{
+    font-size: 1.2rem;
+}
