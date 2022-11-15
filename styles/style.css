@@ -153,3 +153,73 @@ footer h3,h4{
     justify-content: center;
     gap: 10px;
 }
+
+#reset{
+    margin: 20px auto;
+    box-shadow: 2px 3px #154454;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #F0F5E4;
+    color: #154454;
+    font-weight: 300;
+    height: 40px;
+    width: 200px;
+}
+
+svg{
+    width: 200px;
+    height: 80px;
+}
+
+#rect1{
+    x:40px;
+    y:5px; 
+    width:70px; 
+    height:35px; 
+    rx:5px;
+     fill:#3F6797;
+}
+#rect2{
+    x:47px;
+    y:10px; 
+    width:55px; 
+    height:25px; 
+    rx:6px; 
+    fill:#B1D5E4;
+}
+#poly1{ 
+    fill:#3F6797;
+}
+#poly2{
+    fill:#B1D5E4;
+}
+
+#rect1, #poly1{
+animation: appear2 2s ease-out normal;
+}
+
+#rect2, #poly2{
+    animation: appear 3s ease-in normal;
+}
+
+@keyframes appear{
+    0%{
+        transform: translate(0,-10px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+
+@keyframes appear2{
+    0%{
+        transform: translate(0,-20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}

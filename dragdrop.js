@@ -24,6 +24,7 @@ function soltarDatos1(e){
     // let dato2 = e.dataTransfer.getData("Text/plain");
     drop1.innerHTML=`<img src="${dato}"></img>`;
     evento.dataTransfer.clearData();
+
 }
 
 function soltarDatos2(e){
@@ -64,10 +65,15 @@ drop3.addEventListener("dragover",(e)=>{
 
 drop1.addEventListener("drop",(e)=>{
     soltarDatos1(e);
+
 })
 drop2.addEventListener("drop",(e)=>{
     soltarDatos2(e);
 })
 drop3.addEventListener("drop",(e)=>{
     soltarDatos3(e);
+})
+
+resetear.addEventListener("click",()=>{
+    location.reload();
 })
