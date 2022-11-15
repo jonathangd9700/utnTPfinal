@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../images/logo.svg" type="image/x-icon">
+    <title>Proyecto Final</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="containerMenu">
+               <img src="../images/logo.svg" alt="logo principal computadora"> 
+               <ul>
+                <a href="historia.html"><li>HISTORIA</li></a>
+                <li><a href="juguemos.html">JUGUEMOS</a></li>
+               </ul>
+            </div>
+        </nav>
+        <div class="containerTitulo">
+            <h1 class="tituloPrincipal">JUGUEMOS UN POCO</h1>
+        </div>
+    </header>
+    <main>
+        <div class="containerMainJuguemos">
+            <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
+            <section>
+                <div class="cajasDrop">
+                    <div class="caja1" id="drop1">
+                        <p>Arrastra aqui...</p>
+                    </div>
+                    <div class="caja2" id="drop2">
+                        <p>Arrastra aqui...</p>
+                    </div>
+                    <div class="caja3" id="drop3">
+                        <p>Arrastra aqui...</p>
+                    </div>
+                </div>
+                <div class="cajasDrag">
+                    <div class="img1">
+                        <img src="../images/Rompe1.png" alt="rompecabezas 1" id="dragImg1">
+                    </div>
+                    <div class="img2">
+                        <img src="../images/rompe2.png" alt="rompecabezas 2" id="dragImg2">
+                    </div>
+                    <div class="img3" id="dragImg3">
+                        <img src="../images/Rompe3.png" alt="rompecabezas 3" id="dragImg3">
+                    </div>
+                </div>
+            </section>
+            <button id="reset">Reiniciar</button>
+        </div>
+    </main>
+    <!-- <footer>
+        <img src="../images/logo.svg" alt="">
+        <h3>PROGRAMACION E HISTORIA</h3>
+        <h4>Sitio creado sin fines lucrativos</h4>
+    </footer> -->
+    <script src="../dragdrop.js"></script>
+</body>
+</html>

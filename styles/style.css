@@ -60,9 +60,12 @@ a{
     flex-direction: column;
 }
 h2{
+    display: block;
     text-align: center;
     align-items: center;
     color: #F0F5E4;
+    font-size: 3.3rem;
+    text-shadow: 2px 2px #154454;
 }
 .card{
     width: 350px;
@@ -118,4 +121,35 @@ footer h3,h4{
 }
 .articleHistoria p{
     font-size: 1.2rem;
+}
+
+.containerMainJuguemos{
+    width: 100%;
+    background-color: #427E80;
+    display: flex;
+    flex-direction: column;
+}
+
+.cajasDrop{
+    margin-top: 60px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.caja1, .caja2, .caja3{
+    background-color: grey;
+    color: black;
+    width: 23%;
+    border: solid 2px black;
+}
+
+.cajasDrag{
+    margin-top: 60px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
 }
