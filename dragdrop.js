@@ -8,7 +8,6 @@ let resetear = document.getElementById("reset");
 
 function guardarDatos1(e){
     e.dataTransfer.setData("Text", "../images/Rompe1.png");
-    // e.dataTransfer.setData("Text/plain", e.dataTransfer.src);
 }
 
 function guardarDatos2(e){
@@ -21,7 +20,6 @@ function guardarDatos3(e){
 
 function soltarDatos1(e){
     let dato = e.dataTransfer.getData("Text");
-    // let dato2 = e.dataTransfer.getData("Text/plain");
     drop1.innerHTML=`<img src="${dato}"></img>`;
     evento.dataTransfer.clearData();
 
@@ -72,6 +70,18 @@ drop2.addEventListener("drop",(e)=>{
 })
 drop3.addEventListener("drop",(e)=>{
     soltarDatos3(e);
+})
+
+dragImg1.addEventListener("dragend",()=>{
+    dragImg1.style.visibility = "hidden";
+})
+
+dragImg2.addEventListener("dragend",()=>{
+    dragImg2.style.visibility = "hidden";
+})
+
+dragImg3.addEventListener("dragend",()=>{
+    dragImg3.style.visibility = "hidden";
 })
 
 resetear.addEventListener("click",()=>{
